@@ -3,6 +3,7 @@ from datetime import datetime
 from googleapiclient.http import MediaFileUpload
 
 from app.config import APP_SETTINGS
+from app.logger import logger
 
 
 class Uploader:
@@ -31,21 +32,31 @@ class Uploader:
             .execute()
         )
 
-        print(f"Uploaded: {file_path}")
+        logger.info(f"Uploaded: {file_path}")
         return uploaded["id"]
 
     def upload_folder(
-        self, local_path, parent_id=None, max_keep=APP_SETTINGS.max_files
+        self, local_path, parent_id=None, max_keep=APP_SETTINGS.max_files, is_root=True
     ):
         base_name = os.path.basename(local_path.rstrip("/\\"))
-        timestamped_name = base_name + datetime.now().strftime("-%Y%m%d-%H%M%S")
-        self.cleanup_old_versions(base_name, parent_id, max_keep)
-        folder_id = self.create_drive_folder(timestamped_name, parent_id)
+
+        folder_name = (
+            base_name + datetime.now().strftime("-%Y%m%d-%H%M%S")
+            if is_root
+            else base_name
+        )
+
+        if is_root:
+            self.cleanup_old_versions(base_name, parent_id, max_keep)
+
+        logger.info(f"Created folder: {folder_name}")
+
+        folder_id = self.create_drive_folder(folder_name, parent_id)
 
         for item in os.listdir(local_path):
             item_path = os.path.join(local_path, item)
             if os.path.isdir(item_path):
-                self.upload_folder(item_path, folder_id)
+                self.upload_folder(item_path, folder_id, is_root=False)
             else:
                 self.upload_file(item_path, folder_id)
 
@@ -69,4 +80,4 @@ class Uploader:
         if len(folders) > max_keep:
             for folder in folders[max_keep:]:
                 self.service.files().delete(fileId=folder["id"]).execute()
-                print(f"Deleted old folder: {folder['name']}")
+                logger.info(f"Deleted old folder: {folder['name']}")

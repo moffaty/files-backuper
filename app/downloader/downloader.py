@@ -1,6 +1,7 @@
 import os
 import io
 from googleapiclient.http import MediaIoBaseDownload
+from app.logger import logger
 
 
 class Downloader:
@@ -16,7 +17,7 @@ class Downloader:
             done = False
             while not done:
                 status, done = downloader.next_chunk()
-        print(f"Downloaded: {dest_path}")
+        logger.info(f"Downloaded: {dest_path}")
 
     def list_files_in_folder(self, folder_id):
         query = f"'{folder_id}' in parents and trashed = false"
@@ -57,7 +58,7 @@ class Downloader:
             raise FileNotFoundError(f"Drive folder '{folder_name}' not found")
 
         if os.path.exists(local_path):
-            print(f"Removing existing folder: {local_path}")
+            logger.info(f"Removing existing folder: {local_path}")
             for root, dirs, files in os.walk(local_path, topdown=False):
                 for name in files:
                     os.remove(os.path.join(root, name))

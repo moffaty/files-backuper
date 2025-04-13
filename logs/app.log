@@ -1,0 +1,84 @@
+[2025-04-13 17:36:44] INFO in uploader: Deleted old folder: world-20250413-171706
+[2025-04-13 17:37:13] INFO in uploader: Deleted old folder: world-20250413-171736
+[2025-04-13 17:37:16] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:37:53] INFO in uploader: Deleted old folder: world-20250413-173643
+[2025-04-13 17:37:57] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:38:20] INFO in uploader: Deleted old folder: world-20250413-173711
+[2025-04-13 17:38:23] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:38:26] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:38:29] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:40:12] INFO in uploader: Deleted old folder: world-20250413-173752
+[2025-04-13 17:40:15] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:40:17] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:40:20] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:41:11] INFO in uploader: Creating folder: world-20250413-174111
+[2025-04-13 17:41:12] INFO in uploader: Deleted old folder: world-20250413-173819
+[2025-04-13 17:41:13] INFO in uploader: Creating folder: __init__
+[2025-04-13 17:41:15] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:41:15] INFO in uploader: Creating folder: test
+[2025-04-13 17:41:18] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:41:18] INFO in uploader: Creating folder: test
+[2025-04-13 17:41:20] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:41:32] INFO in uploader: Deleted old folder: world-20250413-174011
+[2025-04-13 17:41:32] INFO in uploader: Creating folder: world-20250413-174131
+[2025-04-13 17:41:33] INFO in uploader: Creating folder: __init__
+[2025-04-13 17:41:35] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:41:35] INFO in uploader: Creating folder: test
+[2025-04-13 17:41:37] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:41:37] INFO in uploader: Creating folder: test
+[2025-04-13 17:41:39] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:42:18] INFO in uploader: Deleted old folder: world-20250413-174131
+[2025-04-13 17:42:19] INFO in uploader: Deleted old folder: world-20250413-174111
+[2025-04-13 17:42:19] INFO in uploader: Created folder: world-20250413-174217
+[2025-04-13 17:42:21] INFO in uploader: Created folder: __init__
+[2025-04-13 17:42:23] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:42:23] INFO in uploader: Created folder: test
+[2025-04-13 17:42:25] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:42:25] INFO in uploader: Created folder: test
+[2025-04-13 17:42:27] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:44:12] INFO in uploader: Deleted old folder: world-20250413-174217
+[2025-04-13 17:44:12] INFO in uploader: Created folder: world-20250413-174411
+[2025-04-13 17:44:13] INFO in uploader: Created folder: __init__
+[2025-04-13 17:44:15] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:44:15] INFO in uploader: Created folder: test
+[2025-04-13 17:44:17] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:44:17] INFO in uploader: Created folder: test
+[2025-04-13 17:44:19] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:44:41] INFO in logger: APP initialized.
+[2025-04-13 17:44:42] INFO in uploader: Deleted old folder: world-20250413-174411
+[2025-04-13 17:44:42] INFO in uploader: Created folder: world-20250413-174441
+[2025-04-13 17:44:43] INFO in uploader: Created folder: __init__
+[2025-04-13 17:44:45] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:44:45] INFO in uploader: Created folder: test
+[2025-04-13 17:44:47] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:44:47] INFO in uploader: Created folder: test
+[2025-04-13 17:44:49] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:45:29] INFO in logger: APP initialized.
+[2025-04-13 17:45:30] INFO in uploader: Deleted old folder: world-20250413-174441
+[2025-04-13 17:45:30] INFO in uploader: Created folder: world-20250413-174529
+[2025-04-13 17:45:31] INFO in uploader: Created folder: __init__
+[2025-04-13 17:45:33] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:45:33] INFO in uploader: Created folder: test
+[2025-04-13 17:45:35] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:45:35] INFO in uploader: Created folder: test
+[2025-04-13 17:45:38] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:47:37] INFO in logger: World Backupper initialized.
+[2025-04-13 17:47:38] INFO in uploader: Deleted old folder: world-20250413-174529
+[2025-04-13 17:47:38] INFO in uploader: Created folder: world-20250413-174737
+[2025-04-13 17:47:39] INFO in uploader: Created folder: __init__
+[2025-04-13 17:47:41] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:47:41] INFO in uploader: Created folder: test
+[2025-04-13 17:47:43] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:47:43] INFO in uploader: Created folder: test
+[2025-04-13 17:47:45] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:47:45] INFO in main: Operation completed successfully. World Backupper shutting down.
+[2025-04-13 17:48:10] INFO in main: World Backupper initialized.
+[2025-04-13 17:48:11] INFO in uploader: Deleted old folder: world-20250413-174737
+[2025-04-13 17:48:11] INFO in uploader: Created folder: world-20250413-174810
+[2025-04-13 17:48:12] INFO in uploader: Created folder: __init__
+[2025-04-13 17:48:14] INFO in uploader: Uploaded: world/__init__/tests
+[2025-04-13 17:48:14] INFO in uploader: Created folder: test
+[2025-04-13 17:48:16] INFO in uploader: Uploaded: world/text
+[2025-04-13 17:48:16] INFO in uploader: Created folder: test
+[2025-04-13 17:48:18] INFO in uploader: Uploaded: world/test/test
+[2025-04-13 17:48:18] INFO in main: Operation completed successfully. World Backupper shutting down.

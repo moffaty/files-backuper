@@ -26,9 +26,15 @@ class Settings(BaseSettings):
         default="",
         description="World folder name in Google Drive",
     )
+    log_file: Optional[str] = Field(
+        default="app.log",
+        description="Log file path",
+    )
+    log_dir: Optional[str] = Field(
+        default="logs",
+        description="Log directory path",
+    )
+    app_name: Optional[str] = Field(defualt="World Backupper", description="App name")
 
 
 APP_SETTINGS = Settings()
-
-if __name__ == "__main__":
-    print(APP_SETTINGS.model_dump())

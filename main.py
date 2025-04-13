@@ -1,4 +1,5 @@
 import argparse
+from app.logger import logger
 from app.auth import Authenticator
 from app.uploader import Uploader
 from app.downloader import Downloader
@@ -6,6 +7,8 @@ from app.config import APP_SETTINGS
 
 
 def main():
+    logger.info(f"{APP_SETTINGS.app_name} initialized.")
+
     parser = argparse.ArgumentParser(description="Google Drive sync utility")
 
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -65,6 +68,10 @@ def main():
             local_path=args.local_target,
             parent_id=args.parent,
         )
+
+    logger.info(
+        f"Operation completed successfully. {APP_SETTINGS.app_name} shutting down."
+    )
 
 
 if __name__ == "__main__":

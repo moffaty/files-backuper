@@ -1,6 +1,7 @@
 import argparse
 from app.logger import logger
 from app.auth import Authenticator
+from app.service.service import Service
 from app.uploader import Uploader
 from app.downloader import Downloader
 from app.config import APP_SETTINGS
@@ -68,6 +69,9 @@ def main():
             local_path=args.local_target,
             parent_id=args.parent,
         )
+
+    elif args.command == "create_serice":
+        service = Service()
 
     logger.info(
         f"Operation completed successfully. {APP_SETTINGS.app_name} shutting down."

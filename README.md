@@ -35,4 +35,5 @@
 
    ```bash
    python main.py {upload/download} local_path --options
+   # to see more run `python main.py -h`
    ```
